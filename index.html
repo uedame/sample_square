@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>正方形</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>正方形を作る、aspect-ratio</h1>
+	<p>------------------------------------------------------------------</p>
+	<p>●aspect-ratio使ってない</p>
+
+	<p>「結論」１つの正方形を作るだけならaspect-ratioの方がいい、記述量少ないし、cssもちょろい</p>
+	<!-- aspect-ratio使わないと記述量が多い -->
+	<div class="container">
+		<div class="box"></div>
+	</div>
+	<p>●aspect-ratio使ってる</p>
+	<!-- aspect-ratio使えば記述量が少ない -->
+	<div class="aspect-ratio"></div>
+
+	<p>------------------------------------------------------------------</p>
+	<p>「結論」正方形を横並びにしたいならaspect-ratioを使用しても、結局は親要素をdisplay:flex;に設定する必要があるからあまり変わらん</p>
+	<!-- 従来の正方形 -->
+	<p>●aspect-ratio使ってない</p>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+
+	<!-- モダンの正方形 -->
+	<p>●aspect-ratio使ってる</p>
+	<div class="container">
+		<div class="aspect-ratio"></div>
+		<div class="aspect-ratio"></div>
+		<div class="aspect-ratio"></div>
+		<div class="aspect-ratio"></div>
+		<div class="aspect-ratio"></div>
+		<div class="aspect-ratio"></div>
+	</div>
+
+</body>
+
+</html>

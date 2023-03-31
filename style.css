@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #248eb1;
+}
+
+/******** この書き方でもいけるけど、めんどくさい ********/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.box {
+	width: 20%;
+	/* 意味的には横幅と縦幅の比率を揃えるために使ってるらしい */
+	padding-top: 20%;
+	background-color: red;
+}
+
+.box:nth-child(2n) {
+	background-color: purple;
+}
+
+/******** aspect-ratioをつかった方が記述少ないし、簡単 ********/
+.aspect-ratio {
+	width: 20%;
+	background-color: greenyellow;
+	/* 横幅と縦幅の比率を1:1にするって意味らしい */
+	aspect-ratio: 1;
+}
+
+.aspect-ratio:nth-child(2n) {
+	background-color: yellow;
+}
